@@ -20,7 +20,8 @@
 <%= link_to 'logout', logout_path %>
 
 <div class="span8">
-    
+
+       <%= render 'follow_form' if signed_in? %>
       <h3>Microposts (<%= @user.microposts.count %>)</h3>
       <ol class="microposts">
         <%= render @microposts %>

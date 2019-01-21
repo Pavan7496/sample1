@@ -1,3 +1,4 @@
+@import 'bootstrap';
 html {
   overflow-y: scroll;
 }
@@ -57,13 +58,13 @@ p {
   color: #555;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 0px;
+  padding-top: 50px;
   font-weight: bold;
   line-height: 1;
 }
 
 #logo:hover {
-  color: #fff;
+  color:  #F0E68C;
   text-decoration: none;
 }
 
@@ -96,4 +97,81 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 10px;
+}
+.form-upload{
+  border: 1px solid #dbdbdb;
+  height: auto;
+  margin: auto 160px;
+  padding: 30px;
+  border-radius: 3px;
+  input[type='text']{
+    width: 100%;
+  }
+}
+/* microposts */
+
+.microposts {
+  list-style: none;
+  margin: 10px 0 0 0;
+
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+}
+div.container4 {
+    height: 10em;
+    position: relative
+     }
+div.container4 p {
+    margin: 0;
+    background: #FFFF00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+    }
+
+.timestamp {
+  color: #008B8B;
+}
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+.stats {
+  overflow: auto;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid #ADFF2F;
+    color: #808080;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color:  #0000FF;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
 }

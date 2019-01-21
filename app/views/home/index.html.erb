@@ -2,8 +2,16 @@
 <h1><%= current_user.name %></h1>
   Logged in as <%= current_user.email %>.
   <%= link_to "logout", logout_path %>
+  <%= link_to 'Edit', edit_user_path(current_user) %>
+  <%= link_to 'create your post', root_url %>
+
 <% else %>
   <%= link_to "signin", signin_path %> 
+
   
 <% end %>
+
+
+
+
 
